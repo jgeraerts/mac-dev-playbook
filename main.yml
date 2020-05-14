@@ -32,5 +32,49 @@
       tags:
         - projects
 
+    - name: "clone oh my zsh"
+      git:
+        repo: https://github.com/ohmyzsh/ohmyzsh.git
+        dest: "~/.oh-my-zsh"
+      become: false
+      tags:
+        - dotfiles
+
+    - name: "create .tmux directory"
+      file:
+        path: "~/.tmux/plugins"
+        state: directory
+      become: false
+      tags:
+        - dotfiles
+
+    - name: "clone tmux plugin manager"
+      git:
+        repo: "https://github.com/tmux-plugins/tpm"
+        dest: "~/.tmux/plugins/tpm"
+      become: false
+      tags:
+        - dotfiles
+
+    - name: "clone my dotfiles"
+      git:
+        repo: "{{ dotfiles_repo }}"
+        dest: "{{ dotfiles_repo_local_destination }}"
+        accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
+        
+      become: false
+      tags:
+        - dotfiles
+
+    - name: Link dotfiles into home folder.
+      file:
+        src: "{{ dotfiles_repo_local_destination }}/{{ item }}"
+        dest: "{{ dotfiles_home }}/{{ item }}"
+        state: link
+      become: false
+      with_items: "{{ dotfiles_files }}"
+      tags:
+        - dotfiles
+    
 
 # todo maven settings.xml, projects checkout, iterm2 setup, haproxy ssh config
