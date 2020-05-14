@@ -1,0 +1,36 @@
+---
+- hosts: all
+  connection: local
+
+  vars_files:
+    - default.config.yml
+
+  pre_tasks:
+    - include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml"
+      tags: ['always']
+
+  roles:
+    - role: geerlingguy.homebrew
+      tags: ['homebrew']
+
+  tasks:
+    - name: emacs config
+      git:
+        repo: git@github.com:jgeraerts/dot-emacs.d.git
+        dest: "~/.emacs.d"
+        accept_hostkey: yes
+      become: false
+      tags:
+        - dotfiles
+
+    - name: "ensure project directory"
+      file:
+        path: "{{ projects }}"
+        state: directory
+      tags:
+        - projects
+
+
+# todo maven settings.xml, projects checkout, iterm2 setup, haproxy ssh config
