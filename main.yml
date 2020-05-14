@@ -75,6 +75,21 @@
       with_items: "{{ dotfiles_files }}"
       tags:
         - dotfiles
-    
 
+    - name: Link ssh config
+      file:
+        src: "{{ dotfiles_repo_local_destination }}/ssh_config"
+        dest: "{{ dotfiles_home }}/.ssh/config"
+        state: link
+      become: false
+      tags:
+        - dotfiles
+
+    - name: "ensure .nvm exists"
+      file:
+        path: "~/.nvm"
+        state: directory
+      become: false
+      tags:
+        - dotfiles
 # todo maven settings.xml, projects checkout, iterm2 setup, haproxy ssh config
