@@ -36,6 +36,8 @@ homebrew_installed_packages:
   - jenv
   - nvm
   - borkdude/brew/clj-kondo
+  - ag
+  - ripgrep
   
 
 homebrew_taps:
@@ -57,6 +59,7 @@ homebrew_cask_apps:
   - adoptopenjdk11
   - emacs
   - docker
+  - wireshark
   
 osx_script: "~/.osx --no-restart"
 
