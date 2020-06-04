@@ -38,7 +38,25 @@ homebrew_installed_packages:
   - borkdude/brew/clj-kondo
   - ag
   - ripgrep
-  
+  - - go
+  - gpg
+  - jq
+  - git
+  - python3
+  - tmux
+  - mariadb
+  - postgresql
+  - yarn
+  - leiningen
+  - maven
+  - docker-compose
+  - haproxy
+  - jenv
+  - nvm
+  - borkdude/brew/clj-kondo
+  - ag
+  - ripgrep
+  - azure-cli
 
 homebrew_taps:
   - homebrew/core
@@ -58,6 +76,7 @@ homebrew_cask_apps:
   - adoptopenjdk8
   - adoptopenjdk11
   - emacs
+  - emacsclient
   - docker
   - wireshark
   
