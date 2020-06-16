@@ -57,6 +57,8 @@ homebrew_installed_packages:
   - ag
   - ripgrep
   - azure-cli
+  - youtube-dl
+  - ffmpeg
 
 homebrew_taps:
   - homebrew/core
@@ -79,6 +81,8 @@ homebrew_cask_apps:
   - emacsclient
   - docker
   - wireshark
+  - vlc
+  - google-chrome
   
 osx_script: "~/.osx --no-restart"
 
