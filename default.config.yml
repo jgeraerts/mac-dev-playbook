@@ -59,11 +59,14 @@ homebrew_installed_packages:
   - azure-cli
   - youtube-dl
   - ffmpeg
+  - unrar
+  - ispell
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/services
+  - homebrew/cask-drivers
   - AdoptOpenJDK/openjdk
 
 homebrew_cask_appdir: /Applications
@@ -83,7 +86,9 @@ homebrew_cask_apps:
   - wireshark
   - vlc
   - google-chrome
-  
+  - syncthing
+  - jprofiler
+
 osx_script: "~/.osx --no-restart"
 
 post_provision_tasks: []
