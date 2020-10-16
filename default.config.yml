@@ -20,47 +20,30 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - ag
+  - azure-cli
+  - borkdude/brew/clj-kondo
+  - docker-compose
+  - ffmpeg
+  - git
   - go
   - gpg
-  - jq
-  - git
-  - python3
-  - tmux
-  - mariadb
-  - postgresql
-  - yarn
-  - leiningen
-  - maven
-  - docker-compose
   - haproxy
-  - jenv
-  - nvm
-  - borkdude/brew/clj-kondo
-  - ag
-  - ripgrep
-  - - go
-  - gpg
-  - jq
-  - git
-  - python3
-  - tmux
-  - mariadb
-  - postgresql
-  - yarn
-  - leiningen
-  - maven
-  - docker-compose
-  - haproxy
-  - jenv
-  - nvm
-  - borkdude/brew/clj-kondo
-  - ag
-  - ripgrep
-  - azure-cli
-  - youtube-dl
-  - ffmpeg
-  - unrar
   - ispell
+  - jenv
+  - jq
+  - leiningen
+  - mariadb
+  - maven
+  - nvm
+  - postgresql
+  - protobuf
+  - python3
+  - ripgrep
+  - tmux
+  - unrar
+  - yarn
+  - youtube-dl
 
 homebrew_taps:
   - homebrew/core
