@@ -37,8 +37,10 @@ homebrew_installed_packages:
   - maven
   - nvm
   - postgresql
+  - platformio
   - protobuf
   - python3
+  - rclone
   - ripgrep
   - tmux
   - unrar
@@ -50,10 +52,12 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/services
   - homebrew/cask-drivers
+  - osx-cross/avr
   - AdoptOpenJDK/openjdk
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - bitwarden
   - firefox
   - slack
   - iterm2
