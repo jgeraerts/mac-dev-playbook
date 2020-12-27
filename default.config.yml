@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - ag
   - azure-cli
   - borkdude/brew/clj-kondo
+  - ccls
   - docker-compose
   - ffmpeg
   - git
