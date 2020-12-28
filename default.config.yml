@@ -26,6 +26,7 @@ homebrew_installed_packages:
   - ccls
   - docker-compose
   - ffmpeg
+  - arm-gcc-bin
   - git
   - go
   - gpg
@@ -37,6 +38,7 @@ homebrew_installed_packages:
   - mariadb
   - maven
   - nvm
+  - open-ocd
   - postgresql
   - platformio
   - protobuf
@@ -54,6 +56,7 @@ homebrew_taps:
   - homebrew/services
   - homebrew/cask-drivers
   - osx-cross/avr
+  - osx-cross/arm
   - AdoptOpenJDK/openjdk
 
 homebrew_cask_appdir: /Applications
