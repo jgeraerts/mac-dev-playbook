@@ -24,6 +24,7 @@ homebrew_installed_packages:
   - azure-cli
   - borkdude/brew/clj-kondo
   - ccls
+  - cmake
   - docker-compose
   - ffmpeg
   - arm-gcc-bin
