@@ -22,6 +22,7 @@ homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - ag
   - azure-cli
+  - bear
   - borkdude/brew/clj-kondo
   - ccls
   - cmake
@@ -62,6 +63,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - amethyst
   - bitwarden
   - firefox
   - slack
@@ -69,7 +71,6 @@ homebrew_cask_apps:
   - intellij-idea
   - spotify
   - keepassxc
-  - google-drive-file-stream
   - adoptopenjdk8
   - adoptopenjdk11
   - emacs
