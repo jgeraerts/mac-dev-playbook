@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - ccls
   - cmake
   - docker-compose
+  - ditaa
   - ffmpeg
   - arm-gcc-bin
   - git
@@ -42,6 +43,7 @@ homebrew_installed_packages:
   - nvm
   - open-ocd
   - postgresql
+  - plantuml
   - platformio
   - protobuf
   - python3
