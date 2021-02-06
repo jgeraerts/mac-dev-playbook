@@ -65,24 +65,23 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - adoptopenjdk11
+  - adoptopenjdk8
   - amethyst
   - bitwarden
-  - firefox
-  - slack
-  - iterm2
-  - intellij-idea
-  - spotify
-  - keepassxc
-  - adoptopenjdk8
-  - adoptopenjdk11
-  - emacs
-  - emacsclient
   - docker
-  - wireshark
-  - vlc
+  - emacs
+  - firefox
   - google-chrome
-  - syncthing
+  - intellij-idea
+  - iterm2
   - jprofiler
+  - keepassxc
+  - slack
+  - spotify
+  - syncthing
+  - vlc
+  - wireshark
 
 osx_script: "~/.osx --no-restart"
 
