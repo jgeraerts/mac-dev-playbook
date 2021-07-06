@@ -49,6 +49,7 @@ homebrew_installed_packages:
   - python3
   - rclone
   - ripgrep
+  - rust
   - tmux
   - unrar
   - yarn
