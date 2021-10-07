@@ -20,6 +20,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - act
   - ag
   - azure-cli
   - bear
@@ -50,6 +51,7 @@ homebrew_installed_packages:
   - rclone
   - ripgrep
   - rust
+  - rustup-init
   - tmux
   - unrar
   - yarn
