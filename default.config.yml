@@ -35,6 +35,7 @@ homebrew_installed_packages:
   - go
   - gpg
   - haproxy
+  - htop
   - ispell
   - jenv
   - jq
@@ -79,7 +80,7 @@ homebrew_cask_apps:
   - intellij-idea
   - iterm2
   - jprofiler
-  - keepassxc
+  - secretive
   - slack
   - spotify
   - syncthing
