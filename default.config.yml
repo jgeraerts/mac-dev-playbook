@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - borkdude/brew/clj-kondo
   - ccls
   - cmake
+  - colima
   - d2
   - docker-compose
   - ditaa
@@ -41,7 +42,6 @@ homebrew_installed_packages:
   - jenv
   - jq
   - leiningen
-  - mariadb
   - maven
   - nvm
   - open-ocd
@@ -55,23 +55,18 @@ homebrew_installed_packages:
   - rust
   - rustup-init
   - tmux
-  - unrar
-  - yarn
-  - youtube-dl
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
+  - homebrew/cask-versions
   - homebrew/services
   - homebrew/cask-drivers
   - osx-cross/avr
   - osx-cross/arm
-  - AdoptOpenJDK/openjdk
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - adoptopenjdk11
-  - adoptopenjdk8
   - amethyst
   - bitwarden
   - docker
@@ -85,8 +80,9 @@ homebrew_cask_apps:
   - slack
   - spotify
   - syncthing
+  - temurin17
   - vlc
-  - wireshark
+
 
 osx_script: "~/.osx --no-restart"
 

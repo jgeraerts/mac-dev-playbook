@@ -12,9 +12,10 @@
       tags: ['always']
 
   roles:
-    - role: geerlingguy.homebrew
+    - role: elliotweiser.osx-command-line-tools
+    - role: geerlingguy.mac.homebrew
       tags: ['homebrew']
-
+    
   tasks:
     - name: emacs config
       git:
