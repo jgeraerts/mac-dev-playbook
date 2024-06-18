@@ -1,0 +1,25 @@
+#source https://apple.stackexchange.com/questions/259093/can-touch-id-on-mac-authenticate-sudo-in-terminal
+---
+- hosts: localhost
+  connection: local
+  tasks:
+  - name: install pam_reattach pam module
+    homebrew:
+      name: pam-reattach
+      state: present
+    register: reattach_result
+
+  - name: enable touch id for sudo commands
+    lineinfile:
+      path: /etc/pam.d/sudo
+      line: 'auth       sufficient     pam_tid.so'
+      insertbefore: '^auth       sufficient     pam_smartcard.so$'
+    become: yes
+
+  - name: enable persistent touch id for tmux and iterm
+    lineinfile:
+      path: /etc/pam.d/sudo
+      line: 'auth       optional       pam_reattach.so'
+      insertbefore: '^auth       sufficient     pam_tid.so$'
+    become: yes
+    when: reattach_result == 0
