@@ -25,14 +25,18 @@ homebrew_installed_packages:
   - azure-cli
   - bear
   - borkdude/brew/clj-kondo
+  - cairo
   - ccls
+  - cloudentity/tap/oauth2c
   - cmake
   - colima
   - d2
   - docker-compose
   - ditaa
   - ffmpeg
+  - fx
   - arm-gcc-bin
+  - giflib
   - git
   - go
   - gpg
@@ -40,21 +44,34 @@ homebrew_installed_packages:
   - htop
   - ispell
   - jenv
+  - jpeg
   - jq
+  - k9s
   - leiningen
+  - libffi
+  - libpng
+  - librsvg
   - maven
   - nvm
   - open-ocd
+  - oauth2c
+  - pam-reattach
+  - pango
+  - pipx
   - postgresql
+  - pkg-config
   - plantuml
   - platformio
   - protobuf
+  - pspg
   - python3
   - rclone
   - ripgrep
   - rust
   - rustup-init
+  - stunnel
   - tmux
+  - zlib
 
 homebrew_taps:
   - homebrew/core
@@ -76,11 +93,15 @@ homebrew_cask_apps:
   - intellij-idea
   - iterm2
   - jprofiler
+  - microsoft-remote-desktop
   - secretive
+  - signal
   - slack
   - spotify
   - syncthing
+  - temurin11
   - temurin17
+  - tigervnc-viewer
   - vlc
 
 
