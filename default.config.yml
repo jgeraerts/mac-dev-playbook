@@ -19,8 +19,6 @@ dotfiles_files:
 #  - .vimrc
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - act
   - ag
   - azure-cli
   - bear
@@ -31,7 +29,7 @@ homebrew_installed_packages:
   - cmake
   - colima
   - d2
-  - docker-compose
+  - docker
   - ditaa
   - ffmpeg
   - fx
@@ -58,6 +56,7 @@ homebrew_installed_packages:
   - pam-reattach
   - pango
   - pipx
+  - poetry
   - postgresql
   - pkg-config
   - plantuml
@@ -67,26 +66,18 @@ homebrew_installed_packages:
   - python3
   - rclone
   - ripgrep
-  - rust
   - rustup-init
   - stunnel
   - tmux
   - zlib
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
-  - homebrew/cask-versions
-  - homebrew/services
-  - homebrew/cask-drivers
   - osx-cross/avr
   - osx-cross/arm
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - amethyst
   - bitwarden
-  - docker
   - emacs
   - firefox
   - google-chrome
@@ -99,8 +90,9 @@ homebrew_cask_apps:
   - slack
   - spotify
   - syncthing
-  - temurin11
-  - temurin17
+  - temurin@11
+  - temurin@17
+  - temurin@21
   - tigervnc-viewer
   - vlc
 
