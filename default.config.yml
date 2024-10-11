@@ -21,16 +21,19 @@ dotfiles_files:
 homebrew_installed_packages:
   - ag
   - azure-cli
+  - awscli
   - bear
   - borkdude/brew/clj-kondo
   - cairo
   - ccls
+  - clojure
   - cloudentity/tap/oauth2c
   - cmake
   - colima
   - d2
   - docker
   - ditaa
+  - eksctl
   - ffmpeg
   - fx
   - arm-gcc-bin
@@ -45,6 +48,7 @@ homebrew_installed_packages:
   - jpeg
   - jq
   - k9s
+  - kubectl
   - leiningen
   - libffi
   - libpng
@@ -86,6 +90,7 @@ homebrew_cask_apps:
   - jprofiler
   - microsoft-remote-desktop
   - secretive
+  - session-manager-plugin
   - signal
   - slack
   - spotify
@@ -95,6 +100,7 @@ homebrew_cask_apps:
   - temurin@21
   - tigervnc-viewer
   - vlc
+  - wireshark
 
 
 osx_script: "~/.osx --no-restart"
