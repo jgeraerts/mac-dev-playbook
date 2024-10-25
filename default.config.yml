@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - azure-cli
   - awscli
   - bear
+  - borkdude/brew/babashka 
   - borkdude/brew/clj-kondo
   - cairo
   - ccls
