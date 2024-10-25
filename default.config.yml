@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - colima
   - d2
   - docker
+  - docker-credential-helper
   - ditaa
   - eksctl
   - ffmpeg
