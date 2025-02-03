@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - colima
   - d2
   - docker
+  - docker-buildx
   - docker-credential-helper
   - ditaa
   - eksctl
@@ -57,6 +58,8 @@ homebrew_installed_packages:
   - librsvg
   - maven
   - mqttui
+  - multitail
+  - multimarkdown
   - nvm
   - open-ocd
   - oauth2c
@@ -88,6 +91,7 @@ homebrew_cask_apps:
   - emacs
   - firefox
   - google-chrome
+  - ghostty
   - intellij-idea
   - iterm2
   - jprofiler
