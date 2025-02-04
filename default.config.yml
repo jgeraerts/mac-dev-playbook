@@ -93,7 +93,6 @@ homebrew_cask_apps:
   - google-chrome
   - ghostty
   - intellij-idea
-  - iterm2
   - jprofiler
   - microsoft-remote-desktop
   - secretive
